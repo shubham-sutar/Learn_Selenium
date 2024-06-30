@@ -15,7 +15,10 @@ driver.find_element(By.XPATH, "//input[@id='username']" or "//input[@name='usern
 time.sleep(2)
 driver.find_element(By.XPATH, "//input[@id='password']" and "//input[@name='password']").send_keys("Password123")
 time.sleep(2)
-driver.find_element(By.XPATH, "//button[@id='submit']").click()
+# driver.find_element(By.XPATH, "//button[@id='submit']").click()
+# driver.find_element(By.XPATH, "//button[contains (@id,'submit')]").click()
+# driver.find_element(By.XPATH,"//button[starts-with(@id,'sub')]").click()
+driver.find_element(By.XPATH, "//button[text() = 'Submit']").click()
 time.sleep(2)
 
 act_title = driver.title
