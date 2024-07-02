@@ -23,6 +23,7 @@ email_box.send_keys("abc@123")
 print("result of text:", email_box.text)
 print("result of get_attribute():", email_box.get_attribute('value'))
 
+print("Happy coding..")
 
 # driver.close()
 driver.quit()
