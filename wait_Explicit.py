@@ -13,7 +13,7 @@ driver.get("https://www.google.com/")
 driver.maximize_window()
 # time.sleep(4)
 # driver.implicitly_wait(10)
-wait = WebDriverWait(driver, 10, ignored_exceptions=[Exception])
+wait = WebDriverWait(driver, 10, poll_frequency=2, ignored_exceptions=[Exception])
 
 # for SearchBox
 search_box = driver.find_element(By.NAME, "q")
