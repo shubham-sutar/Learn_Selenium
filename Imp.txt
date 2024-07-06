@@ -1,2 +1,10 @@
 This file added for notes taking.
 # Learning Python with Selenium.
+
+links
+-----------
+1. Internal
+2. External
+3. Broken
+
+
