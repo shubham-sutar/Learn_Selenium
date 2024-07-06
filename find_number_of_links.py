@@ -22,8 +22,16 @@ time.sleep(4)
 """
 
 # Find Number of links using XPATH
-
+"""
 links = driver.find_elements(By.XPATH, "//a")
 print("total links:", len(links))
+"""
+
+# Print the all links name
+links = driver.find_elements(By.XPATH, "//a")
+
+for link in links:
+    print(link.text)
+
 
 driver.close()
