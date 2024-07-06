@@ -28,10 +28,11 @@ print("total links:", len(links))
 """
 
 # Print the all links name
+"""
 links = driver.find_elements(By.XPATH, "//a")
 
 for link in links:
     print(link.text)
-
+"""
 
 driver.close()
