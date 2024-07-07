@@ -11,7 +11,7 @@ driver.get("https://www.opencart.com/index.php?route=account/register")
 driver.maximize_window()
 driver.implicitly_wait(10)
 
-drp_sec_country = Select(driver.find_element(By.XPATH,"//select[@id='input-country']"))
+drp_sec_country = Select(driver.find_element(By.XPATH, "//select[@id='input-country']"))
 
 drp_sec_country.select_by_visible_text("India")
 
