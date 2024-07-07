@@ -7,17 +7,15 @@ import time
 serv_obj = Service("C:\\Drivers\\chromedriver-win32\\chromedriver.exe")
 driver = webdriver.Chrome(service=serv_obj)
 
-driver.get("https://artoftesting.com/samplesiteforselenium")
+driver.get("https://www.opencart.com/index.php?route=account/register")
 driver.maximize_window()
 driver.implicitly_wait(10)
 
-# select_op = driver.find_element(By.XPATH, "//select[@id='testingDropdown']")
-country = Select(driver.find_element(By.XPATH, "//select[@id='testingDropdown']"))
+drp_sec_country = Select(driver.find_element(By.XPATH,"//select[@id='input-country']"))
 
-# select option from dropdown
-country.select_by_visible_text("Database Testing")
-# country.select_by_value("1")  # value
-country.select_by_index(2)  # index
+drp_sec_country.select_by_visible_text("India")
+
 time.sleep(5)
 
 driver.close()
+
