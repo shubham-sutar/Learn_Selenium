@@ -12,4 +12,3 @@ def test_open_vwo():
 
     assert driver.title == "Login - VWO"
     time.sleep(3)
-
