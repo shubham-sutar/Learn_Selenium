@@ -1,8 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
+import pytest
+import allure
 
 
+@pytest.mark.positive
+@allure.title("learn about the Locaters")
+@allure.description("Verify the url changes")
 def test_locators():
     driver = webdriver.Chrome()
     driver.get("https://katalon-demo-cura.herokuapp.com/")
@@ -16,7 +21,3 @@ def test_locators():
     actual_url = "https://katalon-demo-cura.herokuapp.com/profile.php#login"
     assert driver.current_url == actual_url
     time.sleep(3)
-
-
-
-
