@@ -48,3 +48,4 @@ def test_project4():
     mk_appointment = driver.find_element(By.XPATH, "//h2[text()='Make Appointment']")
     assert ((driver.current_url == "https://katalon-demo-cura.herokuapp.com/#appointment") and (mk_appointment.text ==
                                                                                                 'Make Appointment'))
+    driver.close()
